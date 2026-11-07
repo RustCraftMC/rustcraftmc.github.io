@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cairn Launcher — 纯粹 · 优雅 · 灵动的现代 Minecraft 启动器</title>
+<meta name="description" content="Cairn Launcher 是用 Rust 构建的原生第三方 Minecraft 启动器，面向 Windows 10 及更高版本。界面由自研 GUI 引擎原生绘制：不是 Java，不是网页，不是 Electron。完全开源。">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#080a0f">
+<link rel="canonical" href="https://rustcraftmc.github.io/cairnlauncher/">
+<link rel="alternate" hreflang="zh-CN" href="https://rustcraftmc.github.io/cairnlauncher/">
+<link rel="alternate" hreflang="en" href="https://rustcraftmc.github.io/cairnlauncher/en/">
+<link rel="alternate" hreflang="x-default" href="https://rustcraftmc.github.io/cairnlauncher/">
+<link rel="icon" type="image/svg+xml" href="assets/brand/logo.svg">
+<link rel="icon" type="image/png" href="assets/brand/logo.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cairn Launcher — 纯粹 · 优雅 · 灵动的现代 Minecraft 启动器">
+<meta property="og:description" content="Cairn Launcher 是用 Rust 构建的原生第三方 Minecraft 启动器，面向 Windows 10 及更高版本。界面由自研 GUI 引擎原生绘制：不是 Java，不是网页，不是 Electron。完全开源。">
+<meta property="og:url" content="https://rustcraftmc.github.io/cairnlauncher/">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:image" content="https://rustcraftmc.github.io/cairnlauncher/assets/og-zh.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cairn Launcher — 纯粹 · 优雅 · 灵动的现代 Minecraft 启动器">
+<meta name="twitter:description" content="Cairn Launcher 是用 Rust 构建的原生第三方 Minecraft 启动器，面向 Windows 10 及更高版本。界面由自研 GUI 引擎原生绘制：不是 Java，不是网页，不是 Electron。完全开源。">
+<meta name="twitter:image" content="https://rustcraftmc.github.io/cairnlauncher/assets/og-zh.png">
+<link rel="stylesheet" href="assets/base.css">
+<link rel="stylesheet" href="assets/cairn.css">
+<script>document.documentElement.classList.add('js');setTimeout(function(){window.__ok||document.documentElement.classList.remove('js')},4500)</script>
+</head>
+<body class="cairn-body">
+<a class="skip" href="#hero">跳到正文</a>
+<div class="progress" aria-hidden="true"><i></i></div>
+
+<aside class="cairn" aria-label="章节索引">
+<ol>
+<li style="--w:18px;--h:8px;--br:4px;"><a href="#download"><span class="lbl">下载</span></a></li><li style="--w:23px;--h:9px;--br:4px;"><a href="#privacy"><span class="lbl">隐私</span></a></li><li style="--w:28px;--h:10px;--br:5px;"><a href="#measured"><span class="lbl">实测</span></a></li><li style="--w:34px;--h:11px;--br:5px;"><a href="#tour"><span class="lbl">导览</span></a></li><li style="--w:38px;--h:12px;--br:6px;"><a href="#native"><span class="lbl">原生</span></a></li><li style="--w:42px;--h:13px;--br:6px;"><a href="#hero"><span class="lbl">启程</span></a></li>
+</ol>
+</aside>
+
+<header class="nav">
+<div class="nav__in">
+<a class="brand" href="./" aria-label="Cairn Launcher">
+<img src="assets/brand/logo.svg" width="28" height="28" alt="">
+<span>Cairn</span>
+</a>
+<nav class="nav__links" id="site-menu" aria-label="主导航">
+<a href="#native">原生</a><a href="#tour">导览</a><a href="#measured">实测</a><a href="#privacy">隐私</a><a href="#download">下载</a>
+<a href="https://github.com/RustCraftMC/cairn-launcher" rel="noopener">GitHub</a>
+</nav>
+<div class="nav__end">
+<a class="btn btn--sm btn--gold" href="https://github.com/RustCraftMC/cairn-launcher/releases" rel="noopener">下载</a>
+<a class="lang" href="en/" hreflang="en" lang="en">English</a>
+</div>
+</div>
+</header>
+
+<main>
+<!-- ------------------------------------------------------------- HERO -->
+<section id="hero" class="hero" data-chapter="hero">
+<div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+<div class="wrap hero__grid">
+<div class="hero__content">
+<h1 class="hero__title">
+<span>纯粹 <i class="dot">·</i> 优雅 <i class="dot">·</i> 灵动</span>
+<span>现代 Minecraft 原生启动器</span>
+</h1>
+<p class="hero__lede" style="--i:4">用 Rust 写成，界面自己绘制。安装、模组、账号、下载与崩溃诊断，在一扇精致的窗口中从容展开。</p>
+<div class="hero__cta" style="--i:5">
+<a class="btn btn--gold btn--shine" href="https://github.com/RustCraftMC/cairn-launcher/releases" rel="noopener" data-magnetic>获取 Windows 版 <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="10" x2="16" y2="10"></line><polyline points="10 4 16 10 10 16"></polyline></svg></a>
+<a class="btn btn--ghost" href="https://github.com/RustCraftMC/cairn-launcher" rel="noopener" data-magnetic>探索 GitHub 源码</a>
+</div>
+<p class="hero__note" style="--i:6">适用于 Windows 10 及更高版本 · 开源透明 · 第三方非官方启动器</p>
+</div>
+<div class="hero__stage">
+<div class="hero__frame frame px" data-parallax="0.04" data-scrolltilt>
+<img src="assets/shots/home-zh-dark.webp" srcset="assets/shots/home-zh-dark-840.webp 840w, assets/shots/home-zh-dark.webp 1680w"
+     sizes="(max-width: 980px) 100vw, 980px" width="1680" height="1050"
+     alt="Cairn Launcher 主界面：优雅的问候与时钟、本周游玩时长折线、活动热力图、快捷启动卡片，映衬在 GPU 合成的动态毛玻璃与风景壁纸之上" fetchpriority="high">
+</div>
+<div class="hero__chips" aria-hidden="true">
+<div class="hero__chip hero__chip--a" style="--d:0.90s"><b>60 ms</b><span>启动准备（命令行）</span></div><div class="hero__chip hero__chip--b" style="--d:1.08s"><b>9.6 MiB</b><span>单文件程序</span></div><div class="hero__chip hero__chip--c" style="--d:1.26s"><b>0</b><span>遥测代码</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="eco" aria-label="开箱即用的生态">
+<p class="eco__label">开箱即用的生态</p>
+<div class="marquee">
+<div class="marquee__track">
+<ul><li>Fabric</li><li>Quilt</li><li>Forge</li><li>NeoForge</li><li>OptiFine</li><li>Modrinth</li><li>CurseForge</li><li>BMCLAPI</li><li>MCIM</li><li>Microsoft</li><li>LittleSkin</li><li>MultiMC / Prism</li></ul>
+<ul aria-hidden="true"><li>Fabric</li><li>Quilt</li><li>Forge</li><li>NeoForge</li><li>OptiFine</li><li>Modrinth</li><li>CurseForge</li><li>BMCLAPI</li><li>MCIM</li><li>Microsoft</li><li>LittleSkin</li><li>MultiMC / Prism</li></ul>
+</div>
+</div>
+</section>
+
+<!-- ------------------------------------------------------------- NATIVE -->
+<section id="native" class="chapter chapter--native" data-chapter="native">
+<div class="wrap">
+<div class="not-list" aria-label="Java? 网页? Electron?">
+<span class="not" style="--i:0">不是 <span class="strike">Java</span>。</span><span class="not" style="--i:1">不是 <span class="strike">网页</span>。</span><span class="not" style="--i:2">不是 <span class="strike">Electron</span>。</span>
+</div>
+<p class="lede">Cairn 是一个用 Rust 写成的原生程序。界面不是网页：它由自研的 GUI 库 <code>cairn-ui</code> 自己绘制，背景模糊和毛玻璃在 GPU 上合成。</p>
+<div class="native__cols">
+<ul class="facts">
+<li style="--i:0"><strong>没有 JVM，也没有浏览器内核</strong><p>启动器进程里没有 Java 虚拟机，没有 Chromium 或 WebView。release 构建是单个 exe，约 9.6 MiB。</p></li><li style="--i:1"><strong>自研图形引擎，亲手绘制每一个像素</strong><p>界面由本仓库自研的 <code>cairn-ui</code> 纯原生渲染：依托 <code>tiny-skia</code> 呈现细腻抗锯齿矢量、<code>cosmic-text</code> 精确排版复杂字形、<code>taffy</code> 高效解析弹性布局、<code>winit</code> 统管原生窗口。有 OpenGL 3.3 时由 GPU 合成背景模糊与毛玻璃，没有时回退到软件渲染。</p></li><li class="is-key" style="--i:2"><strong>启动器自身纯粹，而游戏本体依然需要 Java</strong><p>我们为启动器卸下了运行时的负担，但 Minecraft 游戏本身仍需 Java。Cairn 会根据每个版本的规范智能推导兼容的 Java 环境，并在本地缺失时自动下载 Mojang 官方运行时，无需手动繁琐配置。</p></li><li style="--i:3"><strong>插件在独立进程里运行</strong><p>扩展插件采用标准的 JavaScript 编写，并在由 QuickJS-NG 驱动的独立宿主子进程中运行。任何涉及网络、本地文件或外部程序的调用均需你在启用时显式授权；插件出错不会拖垮启动器。</p></li>
+</ul>
+<div class="stack-wrap">
+<ul class="stack">
+<li style="--w:56%;--br:10px;--i:0"><code>cairn-ui</code><span>自研控件体系 · 状态模型 · 优雅主题与动效</span></li><li style="--w:66%;--br:12px;--i:1"><code>taffy</code><span>Flexbox / Grid 现代化弹性布局引擎</span></li><li style="--w:78%;--br:14px;--i:2"><code>cosmic-text</code><span>高质量多语言文本排版与字形塑形</span></li><li style="--w:90%;--br:16px;--i:3"><code>tiny-skia</code><span>纯 CPU 高性能抗锯齿 2D 矢量渲染</span></li><li style="--w:100%;--br:18px;--i:4"><code>winit · OpenGL</code><span>系统原生窗口管线与 GPU 毛玻璃合成（支持软件回退）</span></li>
+</ul>
+<p class="stack-cap">石堆（Cairn）的哲学：每一块基石各司其职，不添一分多余的重量。</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ------------------------------------------------------------- TOUR -->
+<section id="tour" class="chapter chapter--tour" data-chapter="tour">
+<div class="wrap">
+<div class="tour__head">
+<div class="chapter__head">
+<h2>全链路生态，凝于方寸之间</h2>
+<p class="sub">将繁琐的版本架构、多源网络、账号隔离与崩溃分析沉淀于底层，呈现自然内敛的现代操作面貌。</p>
+</div>
+<div class="tour__ctl">
+<div class="seg" role="group" aria-label="界面主题">
+<button type="button" data-set="theme:dark" aria-pressed="true">深色</button>
+<button type="button" data-set="theme:light" aria-pressed="false">浅色</button>
+</div>
+<div class="seg" role="group" aria-label="显示语言">
+<button type="button" data-set="lang:zh" aria-pressed="true">中文</button>
+<button type="button" data-set="lang:en" aria-pressed="false">English</button>
+</div>
+</div>
+</div>
+
+<div class="tour" data-shots="assets/shots/">
+<div class="tour__grid">
+<div class="tour__steps">
+<div class="tour__step" data-shot="home" data-alt="模块化自定义仪表盘" style="--i:0"><span class="tour__n" aria-hidden="true">01</span><h3>模块化自定义仪表盘</h3><p>即刻启动、常用快捷方式、数字时钟、游玩时长折线统计与动态热力图一览无余。支持通过优雅的 YAML 格式自由扩展或随心摆放小组件。</p><div class="tour__fig frame"><img src="assets/shots/home-zh-dark.webp" srcset="assets/shots/home-zh-dark-840.webp 840w, assets/shots/home-zh-dark.webp 1680w" sizes="(max-width: 979px) 100vw, 840px" alt="模块化自定义仪表盘" loading="lazy" width="840" height="525" data-shot="home"></div></div><div class="tour__step" data-shot="new-instance" data-alt="全版本与全加载器生态" style="--i:1"><span class="tour__n" aria-hidden="true">02</span><h3>全版本与全加载器生态</h3><p>跨越从最初的 Alpha、经典正式版到最新每周快照的所有官方版本（支持全新年份制版本号），开箱支持 Fabric、Quilt、Forge、NeoForge 与 OptiFine 快速安装。</p><div class="tour__fig frame"><img src="assets/shots/new-instance-zh-dark.webp" srcset="assets/shots/new-instance-zh-dark-840.webp 840w, assets/shots/new-instance-zh-dark.webp 1680w" sizes="(max-width: 979px) 100vw, 840px" alt="全版本与全加载器生态" loading="lazy" width="840" height="525" data-shot="new-instance"></div></div><div class="tour__step" data-shot="instances" data-alt="多维度实例隔离与导入" style="--i:2"><span class="tour__n" aria-hidden="true">03</span><h3>多维度实例隔离与导入</h3><p>既可直接沿用官方 .minecraft 目录，也可建立相互隔离的独立实例并共享全局资源池；具备五档全局隔离策略与细粒度覆盖，并能自动发现并一键迁入已有启动器的数据。</p><div class="tour__fig frame"><img src="assets/shots/instances-zh-dark.webp" srcset="assets/shots/instances-zh-dark-840.webp 840w, assets/shots/instances-zh-dark.webp 1680w" sizes="(max-width: 979px) 100vw, 840px" alt="多维度实例隔离与导入" loading="lazy" width="840" height="525" data-shot="instances"></div></div><div class="tour__step" data-shot="accounts" data-alt="多源身份认证与加密存储" style="--i:0"><span class="tour__n" aria-hidden="true">04</span><h3>多源身份认证与加密存储</h3><p>无缝集成微软 OAuth 设备码登录、自建或统一 Yggdrasil 外置认证（如 LittleSkin）以及离线账户。令牌用 DPAPI 加密保存；离线账户只是本地的玩家名配置，不是游戏许可。</p><div class="tour__fig frame"><img src="assets/shots/accounts-zh-dark.webp" srcset="assets/shots/accounts-zh-dark-840.webp 840w, assets/shots/accounts-zh-dark.webp 1680w" sizes="(max-width: 979px) 100vw, 840px" alt="多源身份认证与加密存储" loading="lazy" width="840" height="525" data-shot="accounts"></div></div><div class="tour__step" data-shot="library" data-alt="模组探索与整合包流转" style="--i:1"><span class="tour__n" aria-hidden="true">05</span><h3>模组探索与整合包流转</h3><p>直连 Modrinth 与 CurseForge 海量生态，自动分析并补全必要前置依赖，支持版本更新检查；完整支持 .mrpack、CurseForge 与 MultiMC / Prism 整合包的导入与导出。</p><div class="tour__fig frame"><img src="assets/shots/library-zh-dark.webp" srcset="assets/shots/library-zh-dark-840.webp 840w, assets/shots/library-zh-dark.webp 1680w" sizes="(max-width: 979px) 100vw, 840px" alt="模组探索与整合包流转" loading="lazy" width="840" height="525" data-shot="library"></div></div><div class="tour__step" data-shot="settings-download" data-alt="自适应多源下载引擎" style="--i:2"><span class="tour__n" aria-hidden="true">06</span><h3>自适应多源下载引擎</h3><p>聚合 Mojang 官方源、BMCLAPI、MCIM 镜像及自定义源，具备动态测速择优与故障自动熔断换源机制；支持自适应并发限流、流式计算 SHA-1 校验与大文件分块断点续传。</p><div class="tour__fig frame"><img src="assets/shots/settings-download-zh-dark.webp" srcset="assets/shots/settings-download-zh-dark-840.webp 840w, assets/shots/settings-download-zh-dark.webp 1680w" sizes="(max-width: 979px) 100vw, 840px" alt="自适应多源下载引擎" loading="lazy" width="840" height="525" data-shot="settings-download"></div></div><div class="tour__step" data-shot="crash" data-alt="崩溃了？先看原因" style="--i:0"><span class="tour__n" aria-hidden="true">07</span><h3>崩溃了？先看原因</h3><p>游戏非正常退出时，启动器在本地深度比对日志、Crash Report 与 JVM hs_err 错误，用界面语言给出可能的原因，并可导出 zip 报告；其中的令牌和用户名会被打码，分享前请再检查一遍。</p><div class="tour__fig frame"><img src="assets/shots/crash-zh-dark.webp" srcset="assets/shots/crash-zh-dark-840.webp 840w, assets/shots/crash-zh-dark.webp 1680w" sizes="(max-width: 979px) 100vw, 840px" alt="崩溃了？先看原因" loading="lazy" width="840" height="525" data-shot="crash"></div></div><div class="tour__step" data-shot="extensions" data-alt="扩展：小组件、面板与插件" style="--i:1"><span class="tour__n" aria-hidden="true">08</span><h3>扩展：小组件、面板与插件</h3><p>支持声明式 YAML 主页小组件与面板，以及在 QuickJS-NG 里、独立进程中运行的 JavaScript 插件。权限调用按需确认，以 <code>--no-plugins</code> 启动可以全部跳过。</p><div class="tour__fig frame"><img src="assets/shots/extensions-zh-dark.webp" srcset="assets/shots/extensions-zh-dark-840.webp 840w, assets/shots/extensions-zh-dark.webp 1680w" sizes="(max-width: 979px) 100vw, 840px" alt="扩展：小组件、面板与插件" loading="lazy" width="840" height="525" data-shot="extensions"></div></div><div class="tour__step" data-shot="settings-appearance" data-alt="视觉定制与多语言支持" style="--i:2"><span class="tour__n" aria-hidden="true">09</span><h3>视觉定制与多语言支持</h3><p>深浅双色主题、动态拾取自定义强调色、带毛玻璃景深的自选壁纸与系统级高 DPI 平滑缩放。界面原生支持简体中文、English 与日本語三语。</p><div class="tour__fig frame"><img src="assets/shots/settings-appearance-zh-dark.webp" srcset="assets/shots/settings-appearance-zh-dark-840.webp 840w, assets/shots/settings-appearance-zh-dark.webp 1680w" sizes="(max-width: 979px) 100vw, 840px" alt="视觉定制与多语言支持" loading="lazy" width="840" height="525" data-shot="settings-appearance"></div></div>
+</div>
+<div class="tour__stage frame">
+<img src="assets/shots/home-zh-dark.webp" srcset="assets/shots/home-zh-dark-840.webp 840w, assets/shots/home-zh-dark.webp 1680w"
+     sizes="(max-width: 1440px) 50vw, 840px" width="840" height="525"
+     alt="模块化自定义仪表盘">
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ------------------------------------------------------------- MEASURED -->
+<section id="measured" class="chapter chapter--bench" data-chapter="measured">
+<div class="wrap">
+<div class="chapter__head">
+<h2>实测性能指标</h2>
+</div>
+<ul class="bench__rows">
+<li class="bench__row" style="--i:0"><p class="num"><span><b>60</b><small>ms</small></span></p><div class="bench__meta"><p class="bench__what">NeoForge 1.21.1 完整启动准备</p><p class="bench__more">完成配置解析、版本继承链推导、校验约 4,000 个游戏文件、确定兼容 Java 运行时、解压 natives 库并构建完整启动命令。10 次测量取中位数（经第二轮优化由 106 ms 降至 60 ms）。</p></div></li><li class="bench__row" style="--i:1"><p class="num"><span><b>32</b><small>ms</small></span></p><div class="bench__meta"><p class="bench__what">300 个模组超大整合包热扫描</p><p class="bench__more">300 个 jar 由 3 个真实的 Fabric 模组改名复制而来，每个文件都真实地打开、算哈希、解析元数据。首次扫描（哈希缓存为空）约 412 ms。</p></div></li><li class="bench__row" style="--i:2"><p class="num"><span><b>≈14</b><small>MiB</small></span></p><div class="bench__meta"><p class="bench__what">启动准备全流程峰值内存</p><p class="bench__more">命令行核心进程在完成全量依赖与游戏文件准备时的真实工作集峰值。图形界面运行时的整体内存占用还没有测量。</p></div></li><li class="bench__row" style="--i:3"><p class="num"><span><b>9.6</b><small>MiB</small></span></p><div class="bench__meta"><p class="bench__what">独立单文件可执行程序体积</p><p class="bench__more">Release 构建下 <code>CairnLauncher.exe</code> 完整单文件体积为 10,046,464 字节；底层核心 CLI <code>cairn.exe</code> 仅约 5.2 MiB（5,473,792 字节）。</p></div></li>
+</ul>
+<div class="bench__cond">
+<p><strong>基准测试硬件与测试环境：</strong>测试设备：Intel Core i7-14700F（20 核 28 线程）、32 GB 内存、NVMe 固态硬盘、Windows 11 Pro for Workstations（Build 26200）。每项测试均由独立新进程执行，统计耗时包含进程创建全开销。测试于系统文件缓存预热状态下执行，冷盘读取没有单独测量。以上数据来自命令行工具 <code>cairn.exe</code> 的核心操作，不是图形界面；图形界面的启动时间和整体内存占用尚未测量，所以这里没有它们的数字。</p>
+</div>
+</div>
+</section>
+
+<!-- ------------------------------------------------------------- PRIVACY -->
+<section id="privacy" class="chapter chapter--priv" data-chapter="privacy">
+<div class="wrap">
+<div class="priv__grid">
+<div class="priv__head">
+<h2>你的数据，留在你的设备上</h2>
+<p class="sub">严格遵循《隐私政策》（版本 1.0，2026-11-06 生效）依据 0.1.0 版的源代码编写。</p>
+<div class="callout glass" data-spot>
+<h3>关于账号与游戏授权的合规声明</h3>
+<p>离线账号仅为启动器本地配置的玩家名档案，绝不构成亦不能替代 Minecraft 游戏的正版软件授权。根据《用户协议》第 3 章规定：居住在中国大陆境外的用户，必须首先通过 Microsoft 官方流程登录拥有 Minecraft Java 版的正版账户，方可使用离线账号；居住在中国大陆境内的用户，强烈建议在持有正版授权的前提下使用。</p>
+</div>
+<div class="priv__links">
+<a class="btn btn--ghost" href="privacy/">阅读隐私政策</a>
+<a class="btn btn--ghost" href="terms/">阅读用户协议</a>
+</div>
+</div>
+<ul class="priv__rows">
+<li style="--i:0"><strong>没有遥测、使用统计、崩溃上传、广告或行为追踪</strong><p>启动器不会向开发者运营的服务器上传你的数据，开发者也不持有你的数据。</p></li><li style="--i:1"><strong>便携归一，数据就地存放</strong><p>所有账号凭据、配置项与实例默认聚合在可执行程序同级的 <code>.cairn</code> 目录（支持通过 <code>CAIRN_HOME</code> 灵活重定向）。删掉文件夹就清除了；游戏目录（默认的 <code>.minecraft</code>）是另一回事，删除前请先备份存档。</p></li><li style="--i:2"><strong>联网是为了完成你的操作，不经过开发者</strong><p>账号登录、版本索引与资源下载均直连 Microsoft、Mojang、Modrinth、CurseForge 或你手动配置的镜像源，不经过开发者。每一项请求发往哪里、发送什么，隐私政策第 3 节逐项列出。</p></li><li style="--i:3"><strong>令牌加密保存，其他文件是明文</strong><p>在 Windows 上，保存令牌的 <code>accounts.dat</code> 用 DPAPI 加密；<code>config.json</code> 等其他文件是明文。</p></li><li style="--i:4"><strong>没有自动更新</strong><p>启动器不会检查或安装自己的新版本。需要新版本时，请回到官网或仓库获取。</p></li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- ------------------------------------------------------------- DOWNLOAD -->
+<section id="download" class="chapter chapter--get" data-chapter="download">
+<div class="wrap">
+<div class="get__grid">
+<div class="get__info">
+<h2>获取单文件版本，或由源码亲手构建</h2>
+<p class="lede">目前面向 Windows 10 及更高版本系统提供原生支持。启动器采用免安装便携设计，没有安装包，所有数据完全内敛于旁侧的 <code>.cairn</code> 文件夹中。</p>
+<div class="get__cta">
+<a class="btn btn--gold btn--shine" href="https://github.com/RustCraftMC/cairn-launcher/releases" rel="noopener" data-magnetic>前往 GitHub Releases 下载 <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="10" x2="16" y2="10"></line><polyline points="10 4 16 10 10 16"></polyline></svg></a>
+<a class="btn btn--ghost" href="https://github.com/RustCraftMC/cairn-launcher" rel="noopener" data-magnetic>浏览 GitHub 源代码仓库</a>
+</div>
+<ul class="get__facts">
+<li>开源，详见仓库。图形界面库 <code>cairn-ui</code> 采用 MIT 或 Apache-2.0 双许可。</li><li>没有自动更新：需要新版本时，回到这里或仓库获取。</li><li>从源码构建要求：Windows 10 或更高版本系统，以及 Rust 1.91+（2024 Edition）。</li>
+</ul>
+</div>
+<div class="code glass frame" data-spot>
+<div class="code__top">
+<span class="code__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+<span>从源代码快速编译</span>
+<button type="button" class="copy" data-copy="#code-build" data-done="已复制到剪贴板">
+<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="2"></rect><path d="M4 13V5a2 2 0 0 1 2-2h8"></path></svg><span>复制命令</span>
+</button>
+</div>
+<pre id="code-build"><code>cargo run -p cairn-app                     # 启动桌面应用程序
+cargo build --release -p cairn-app         # 编译 target\release\CairnLauncher.exe
+cargo build --release -p cairn-cli         # 编译 target\release\cairn.exe</code></pre>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="foot">
+<div class="wrap">
+<div class="foot__mark" aria-hidden="true">Cairn</div>
+<div class="foot__grid">
+<nav class="foot__links" aria-label="页脚">
+<a href="./">官网首页</a>
+<a href="terms/">用户协议</a>
+<a href="privacy/">隐私政策</a>
+<a href="https://github.com/RustCraftMC/cairn-launcher" rel="noopener">GitHub 仓库</a>
+<a href="https://github.com/RustCraftMC/cairn-launcher/releases" rel="noopener">下载</a>
+<a href="../">RustCraftMC Team</a>
+</nav>
+<div class="foot__legal">
+<p class="foot__disc">NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.</p>
+<p>非 Minecraft 官方产品，未获 Mojang 或 Microsoft 批准，也与其无关联。</p>
+<p>Minecraft 是 Mojang Studios 和 Microsoft 的商标。Cairn Launcher 是第三方的非官方启动器。</p>
+<p>特别感谢 <a href="https://github.com/Hex-Dragon/PCL2" rel="noopener">Plain Craft Launcher 2</a> 与 <a href="https://github.com/HMCL-dev/HMCL" rel="noopener">Hello Minecraft! Launcher</a>。</p>
+</div>
+</div>
+</div>
+</footer>
+<script src="assets/base.js" defer></script>
+<script src="assets/cairn.js" defer></script>
+</body>
+</html>
