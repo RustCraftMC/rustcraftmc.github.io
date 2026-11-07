@@ -106,11 +106,12 @@
     });
   });
 
-  // Switch theme and language
-  $$('[data-set]', tour).forEach((btn) => btn.addEventListener('click', () => {
+  // Switch theme and language. The toggles sit next to .tour in the same section, not inside it.
+  const ctl = tour.closest('section') || doc;
+  $$('[data-set]', ctl).forEach((btn) => btn.addEventListener('click', () => {
     const [key, value] = btn.dataset.set.split(':');
     state[key] = value;
-    $$('[data-set^="' + key + ':"]', tour).forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
+    $$('[data-set^="' + key + ':"]', ctl).forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
     refreshFigs();
     show(active, true);
   }));
