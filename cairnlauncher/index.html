@@ -186,7 +186,7 @@
 </div>
 </div>
 <ul class="priv__rows">
-<li style="--i:0"><strong>没有遥测、使用统计、崩溃上传、广告或行为追踪</strong><p>启动器不会向开发者运营的服务器上传你的数据，开发者也不持有你的数据。</p></li><li style="--i:1"><strong>便携归一，数据就地存放</strong><p>所有账号凭据、配置项与实例默认聚合在可执行程序同级的 <code>.cairn</code> 目录（支持通过 <code>CAIRN_HOME</code> 灵活重定向）。删掉文件夹就清除了；游戏目录（默认的 <code>.minecraft</code>）是另一回事，删除前请先备份存档。</p></li><li style="--i:2"><strong>联网是为了完成你的操作，不经过开发者</strong><p>账号登录、版本索引与资源下载均直连 Microsoft、Mojang、Modrinth、CurseForge 或你手动配置的镜像源，不经过开发者。每一项请求发往哪里、发送什么，隐私政策第 3 节逐项列出。</p></li><li style="--i:3"><strong>令牌加密保存，其他文件是明文</strong><p>在 Windows 上，保存令牌的 <code>accounts.dat</code> 用 DPAPI 加密；<code>config.json</code> 等其他文件是明文。</p></li><li style="--i:4"><strong>没有自动更新</strong><p>启动器不会检查或安装自己的新版本。需要新版本时，请回到官网或仓库获取。</p></li>
+<li style="--i:0"><strong>没有遥测、使用统计、崩溃上传、广告或行为追踪</strong><p>启动器不会向开发者运营的服务器上传你的数据，开发者也不持有你的数据。</p></li><li style="--i:1"><strong>便携归一，数据就地存放</strong><p>所有账号凭据、配置项与实例默认聚合在可执行程序同级的 <code>.cairn</code> 目录（支持通过 <code>CAIRN_HOME</code> 灵活重定向）。删掉文件夹就清除了；游戏目录（默认的 <code>.minecraft</code>）是另一回事，删除前请先备份存档。</p></li><li style="--i:2"><strong>联网是为了完成你的操作，不经过开发者</strong><p>账号登录、版本索引与资源下载均直连 Microsoft、Mojang、Modrinth、CurseForge 或你手动配置的镜像源，不经过开发者。每一项请求发往哪里、发送什么，隐私政策第 3 节逐项列出。</p></li><li style="--i:3"><strong>令牌加密保存，其他文件是明文</strong><p>在 Windows 上，保存令牌的 <code>accounts.dat</code> 用 DPAPI 加密；<code>config.json</code> 等其他文件是明文。</p></li><li style="--i:4"><strong>透明受控的更新机制</strong><p>启动器默认静默检查版本清单，何时下载与替换完全由你确认；所有更新均经 SHA-256 完整性校验与就地热替换，绝无未经同意的静默强更。</p></li>
 </ul>
 </div>
 </div>
@@ -204,7 +204,7 @@
 <a class="btn btn--ghost" href="https://github.com/RustCraftMC/cairn-launcher" rel="noopener" data-magnetic>浏览 GitHub 源代码仓库</a>
 </div>
 <ul class="get__facts">
-<li>开源，详见仓库。图形界面库 <code>cairn-ui</code> 采用 MIT 或 Apache-2.0 双许可。</li><li>没有自动更新：需要新版本时，回到这里或仓库获取。</li><li>从源码构建要求：Windows 10 或更高版本系统，以及 Rust 1.91+（2024 Edition）。</li>
+<li>开源，详见仓库。图形界面库 <code>cairn-ui</code> 采用 MIT 或 Apache-2.0 双许可。</li><li>受控更新：支持静默检查与一键就地替换，升级前严格校验哈希，亦可随时在设置中关闭。</li><li>从源码构建要求：Windows 10 或更高版本系统，以及 Rust 1.91+（2024 Edition）。</li>
 </ul>
 </div>
 <div class="code glass frame" data-spot>
@@ -240,7 +240,7 @@ cargo build --release -p cairn-cli         # 编译 target\release\cairn.exe</co
 <p class="foot__disc">NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.</p>
 <p>非 Minecraft 官方产品，未获 Mojang 或 Microsoft 批准，也与其无关联。</p>
 <p>Minecraft 是 Mojang Studios 和 Microsoft 的商标。Cairn Launcher 是第三方的非官方启动器。</p>
-<p>特别感谢 <a href="https://github.com/Hex-Dragon/PCL2" rel="noopener">Plain Craft Launcher 2</a> 与 <a href="https://github.com/HMCL-dev/HMCL" rel="noopener">Hello Minecraft! Launcher</a>。</p>
+<p>特别感谢 <a href="https://github.com/Meloong-Git/PCL" rel="noopener">Plain Craft Launcher 2</a>、<a href="https://github.com/HMCL-dev/HMCL" rel="noopener">Hello Minecraft! Launcher</a> 以及 <a href="https://github.com/cubk1/b-launcher" rel="noopener">b-launcher</a>。</p>
 </div>
 </div>
 </div>

@@ -186,7 +186,7 @@
 </div>
 </div>
 <ul class="priv__rows">
-<li style="--i:0"><strong>No telemetry, usage statistics, crash uploads, ads or behavioral tracking</strong><p>The launcher uploads nothing to a server operated by the developer, and the developer does not hold your data.</p></li><li style="--i:1"><strong>Clean portable storage by design</strong><p>All accounts, configurations, and instances reside by default in the adjacent <code>.cairn</code> folder (configurable via <code>CAIRN_HOME</code>). Delete the folder and they are gone. Game folders such as <code>.minecraft</code> are a separate matter: back up your saves before you delete anything.</p></li><li style="--i:2"><strong>Network requests exist to carry out your actions</strong><p>Logins, version manifests, and asset downloads connect straight to Microsoft, Mojang, Modrinth, CurseForge, or your configured mirrors, without any developer-operated middleman proxy.</p></li><li style="--i:3"><strong>Tokens are encrypted; other files are plain text</strong><p>On Windows, <code>accounts.dat</code>, which holds your tokens, is encrypted with DPAPI. <code>config.json</code> and the other files are plain text.</p></li><li style="--i:4"><strong>No automatic update</strong><p>The launcher never checks for or installs its own new versions. Come back here or to the repository when you need one.</p></li>
+<li style="--i:0"><strong>No telemetry, usage statistics, crash uploads, ads or behavioral tracking</strong><p>The launcher uploads nothing to a server operated by the developer, and the developer does not hold your data.</p></li><li style="--i:1"><strong>Clean portable storage by design</strong><p>All accounts, configurations, and instances reside by default in the adjacent <code>.cairn</code> folder (configurable via <code>CAIRN_HOME</code>). Delete the folder and they are gone. Game folders such as <code>.minecraft</code> are a separate matter: back up your saves before you delete anything.</p></li><li style="--i:2"><strong>Network requests exist to carry out your actions</strong><p>Logins, version manifests, and asset downloads connect straight to Microsoft, Mojang, Modrinth, CurseForge, or your configured mirrors, without any developer-operated middleman proxy.</p></li><li style="--i:3"><strong>Tokens are encrypted; other files are plain text</strong><p>On Windows, <code>accounts.dat</code>, which holds your tokens, is encrypted with DPAPI. <code>config.json</code> and the other files are plain text.</p></li><li style="--i:4"><strong>User-controlled updates</strong><p>The launcher checks for new releases quietly without intrusive popups. Downloads and in-place swaps occur only when explicitly confirmed, verified via SHA-256 checksums.</p></li>
 </ul>
 </div>
 </div>
@@ -204,7 +204,7 @@
 <a class="btn btn--ghost" href="https://github.com/RustCraftMC/cairn-launcher" rel="noopener" data-magnetic>Browse GitHub Repository</a>
 </div>
 <ul class="get__facts">
-<li>Open source; see the repository for details. The GUI library <code>cairn-ui</code> is dual licensed under MIT or Apache-2.0.</li><li>No automatic update: come back here or to the repository when you need a new version.</li><li>Requirements for building from source: Windows 10 or newer, and Rust 1.91+ (2024 Edition).</li>
+<li>Open source; see the repository for details. The GUI library <code>cairn-ui</code> is dual licensed under MIT or Apache-2.0.</li><li>Controlled updates: supports update checks and seamless in-place replacement with SHA-256 verification, fully configurable in settings.</li><li>Requirements for building from source: Windows 10 or newer, and Rust 1.91+ (2024 Edition).</li>
 </ul>
 </div>
 <div class="code glass frame" data-spot>
@@ -240,7 +240,7 @@ cargo build --release -p cairn-cli         # Build target\release\cairn.exe</cod
 <p class="foot__disc">NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.</p>
 <p>非 Minecraft 官方产品，未获 Mojang 或 Microsoft 批准，也与其无关联。</p>
 <p>Minecraft is a trademark of Mojang Studios and Microsoft. Cairn Launcher is an unofficial launcher.</p>
-<p>Special thanks to <a href="https://github.com/Hex-Dragon/PCL2" rel="noopener">Plain Craft Launcher 2</a> and <a href="https://github.com/HMCL-dev/HMCL" rel="noopener">Hello Minecraft! Launcher</a>.</p>
+<p>Special thanks to <a href="https://github.com/Meloong-Git/PCL" rel="noopener">Plain Craft Launcher 2</a>, <a href="https://github.com/HMCL-dev/HMCL" rel="noopener">Hello Minecraft! Launcher</a>, and <a href="https://github.com/cubk1/b-launcher" rel="noopener">b-launcher</a>.</p>
 </div>
 </div>
 </div>
